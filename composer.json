@@ -1,0 +1,41 @@
+{
+    "name": "isaeken/advanced-plugin-system",
+    "version": "0.1",
+    "type": "library",
+    "description": "Advanced plugin system for your big projects.",
+    "keywords": ["advanced", "plugin", "extension", "support", "management", "system", "integration", "package"],
+    "homepage": "https://www.isaeken.com.tr",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "İsa Eken",
+            "email": "hello@isaeken.com.tr",
+            "homepage": "https://www.isaeken.com.tr",
+            "role": "Founder"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IsaEken\\AdvancedPluginSystem\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IsaEken\\AdvancedPluginSystem\\Test\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/collections": "^8.0",
+        "ext-json": "*",
+        "spatie/regex": "dev-master",
+        "composer/semver": "3.x-dev",
+        "composer/composer": "2.0.x-dev"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.1",
+        "phpunit/phpunit": "^9.4"
+    }
+}

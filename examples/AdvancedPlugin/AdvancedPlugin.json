@@ -1,0 +1,57 @@
+{
+  "name": "advanced-plugin-system/advanced-plugin",
+  "version": "1.0.0-beta",
+  "description": "This is a example advanced plugin",
+  "keywords": ["advanced", "example", "plugin"],
+  "homepage": "https://github.com/isaeken/advanced-plugin-system",
+  "license": "MIT",
+  "readme": "readme.md",
+  "authors": [
+    {
+      "name": "İsa Eken",
+      "email": "hello@isaeken.com.tr",
+      "homepage": "https://www.isaeken.com.tr",
+      "role": "Founder"
+    }
+  ],
+  "autoload": {
+    "variables": {
+      "AdvancedPluginSystem\\AdvancedPlugin\\Variables": "Variables.php"
+    },
+    "hooks": {
+      "AdvancedPluginSystem\\AdvancedPlugin\\Hooks": "Hooks.php"
+    },
+    "psr-4": {
+      "AdvancedPluginSystem\\AdvancedPlugin\\": "src"
+    }
+  },
+  "require": {
+    "php": "^7.4",
+    "isaeken/advanced-plugin-system": "*"
+  },
+  "abandoned": false,
+  "bin": [
+    "bin/advanced-plugin",
+    "bin/example-command"
+  ],
+  "config": {
+    "bin-dir": "bin/",
+    "htaccess-protect": true,
+    "supported-platforms": "*",
+    "process-timeout": 30,
+    "use-composer-installer": false
+  },
+  "suggest": {
+    "advanced-plugin-system/example-plugin": "v1.0"
+  },
+  "support": {
+    "wiki": "http://example.com/wiki",
+    "source": "http://example.com/source",
+    "rss": "http://example.com/rss",
+    "issues": "http://example.com/issues",
+    "irc": "http://example.com/irc",
+    "forum": "http://example.com/forum",
+    "docs": "http://example.com/docs",
+    "email": "example@example.com"
+  }
+}
