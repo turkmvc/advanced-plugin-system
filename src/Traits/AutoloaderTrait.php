@@ -44,8 +44,8 @@ trait AutoloaderTrait
         }
 
         foreach ($options as $key => $value) {
-            if (isset($this->$$key)) {
-                $this->$$key = $value;
+            if (isset($this->{$key})) {
+                $this->{$key} = $value;
             }
         }
 
